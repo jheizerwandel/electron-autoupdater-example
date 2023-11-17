@@ -1,0 +1,29 @@
+{
+  "name": "electron-autoupdater",
+  "version": "1.0.0",
+  "description": "my app auto updated",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "build": {
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "jheizerwandel",
+        "repo": "electron-autoupdater-example"
+      }
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^27.1.0"
+  },
+  "dependencies": {
+    "electron-log": "^5.0.0",
+    "electron-updater": "^6.1.4"
+  }
+}
